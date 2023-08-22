@@ -8,8 +8,8 @@ const PORT = 8000;
 
 //aws 설정
 aws.config.update({
-    accessKeyId: '',
-    secretAccessKey: '',
+    accessKeyId: 'AKIAVPWXM5KF7T5YFVVQ',
+    secretAccessKey: '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',
     region: 'ap-northeast-2'
 })
 
