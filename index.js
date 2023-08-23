@@ -46,7 +46,7 @@ const upload = multer({
         bucket: 'multer-test-s3',
         acl: 'public-read', //파일 접근 권한 (public-read로 해야 업로드된 파일이 공개)
         metadata: function (res, file, cb) {
-            cb(null, { fieldName: file.filename })
+            cb(null, { fieldName: file.fieldname })
         },
         key: function (req, file, cb) {
             cb(null, Date.now().toString() + '-' + file.originalname)
